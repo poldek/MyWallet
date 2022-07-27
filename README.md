@@ -1,7 +1,7 @@
 # MyWallet
 
 MyWallet demo environment, show metamask wallet confirm and sign message
-[`DEMO`](mywallet.pgmsoft.com).
+[`DEMO`](http://mywallet.pgmsoft.com).
 
 # create-svelte
 
