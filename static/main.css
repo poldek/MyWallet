@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.header {
+  color: #265df4;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.welcome-text {
+  margin-top: 3rem;
+  color: white;
+  font-size: 0.995rem;
+  font-weight: 500;
+  color: white;
+}
+
+.show_box {
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+  border-width: 1;
+  background-color: #3b3d47;
+  font-size: 0.995rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 1.25rem;
+  padding: 1rem 1.5rem;
+  transition-duration: 0.3s;
+}
+.btnCustom button {
+  border-radius: 0.75rem;
+  border-width: 0;
+  background-color: #265df4;
+  font-size: 0.995rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 1.25rem;
+  padding: 1rem 1.5rem;
+  transition-duration: 0.3s;
+}
+
+.btnCustom button:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+.btnCustom {
+  margin-top: 2em;
+}
+
+.footer {
+  position: fixed;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.995rem;
+  font-weight: 500;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #265df4;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: yellow;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.995rem;
+  font-weight: 500;
+  text-decoration: none;
+}
