@@ -1,11 +1,26 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.75;
+  margin: 0;
+  min-block-size: 100vh;
+  background-color: #26272e;
+  color: white;
+}
+nav {
+  margin: 1rem;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, white, wheat);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 .container {
   position: relative;
   text-align: center;
-}
-
-.header {
-  color: #265df4;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .welcome-text {
@@ -51,6 +66,35 @@
   margin-top: 2em;
 }
 
+a {
+  color: #265df4;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.995rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
+p {
+  display: inline;
+}
+
+.text-success {
+  border-radius: 0.75rem;
+  border-width: 0;
+  background-color: #1b3d33;
+  font-size: 0.995rem;
+  font-weight: 500;
+  color: #03db9f;
+  letter-spacing: -0.02em;
+  line-height: 1.25rem;
+  padding: 1rem 1.5rem;
+  transition-duration: 0.3s;
+}
+
 .footer {
   position: fixed;
   font-family: "Courier New", Courier, monospace;
@@ -59,15 +103,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #265df4;
+  background-color: #3b3d47;
   color: white;
   text-align: center;
-}
-
-a {
-  color: yellow;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.995rem;
-  font-weight: 500;
-  text-decoration: none;
 }

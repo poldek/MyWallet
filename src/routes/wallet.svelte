@@ -7,7 +7,6 @@ import {
     onMount
 } from 'svelte';
 
-
 import AccountInfo from './account.svelte';
 import NetworkInfo from './network.svelte';
 import SignInformation from './sign.svelte';
@@ -98,29 +97,12 @@ async function getBalance(account) {
 }
 </script>
 
-<div class="container">
-
-    <div class="header">
-        <img src="./assets/img/MetaMask_small.png" width="50px;" style="vertical-align:middle;" alt="Coffee">MyWallet
+{#if account}
+<AccountInfo {account} {balance}/>
+    <NetworkInfo {name} {chainId}/>
+        <SignInformation {authenticated} {decodeMessage} {signature} {account} {provider}/>
+            {:else}
+    <div class="btnCustom">
+        <button on:click={connectWallet}>Connect With My Wallet</button>
     </div>
-    {#if account}
-    <AccountInfo {account} {balance}/>
-        <NetworkInfo {name} {chainId}/>
-            <SignInformation {authenticated} {decodeMessage} {signature} {account} {provider}/>
-                {:else}
-                <div class="welcome-text">
-                    <p>Welcome to MyWallet demo environment.</p>
-                    <p>Connect with your wallet to see the supported functions in the MyWallet</p>
-                    <p>Made thanks:</p>
-                        <a href="https://kit.svelte.dev/" target="_blank"> Svelte Kit Technology </a>
-                        <a href="https://docs.metamask.io/guide/" target="_blank"> Metamask </a>
-                        <a href="https://docs.ethers.io/v5/" target="_blank"> Ethers.js </a>
-                        <a href="https://ethereum.org/en/" target="_blank"> Ethereum </a>
-                        <a href="https://docs.soliditylang.org/" target="_blank"> Solidity </a>
-                    
-                </div>
-                <div class="btnCustom">
-                    <button on:click={connectWallet}>Connect With My Wallet</button>
-                </div>
-                {/if}
-                </div>
+{/if}

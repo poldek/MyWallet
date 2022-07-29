@@ -26,8 +26,8 @@ async function handleSignedMessage() {
 
 <div class="show_box">
     <h3>Sign message - if you sign the message you will see additional information status, signed account and hash message </h3>
-    <p>{authenticated}</p>
-    <p>{decodeMessage}</p>
+    <p>{authenticated}</p><br>
+    <p>{decodeMessage}</p><br>
     <p>{signature}</p>
     {#if !authenticated}
     <div class="btnCustom">

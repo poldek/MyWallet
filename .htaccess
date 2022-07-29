@@ -1,0 +1,5 @@
+#Przekierowanie bez WWW
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.http://mywallet.pgmsoft.com/ [nc]
+RewriteRule ^(.*)$ http://http://mywallet.pgmsoft.com//$1 [r=301,nc]
