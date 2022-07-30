@@ -75,5 +75,5 @@ async function handleWeb3Modal() {
 </div>
 {:else}
 <br />
-Address: <p class="text-success">{shortAccout}</p>
+Your wallet: <p class="text-success">{shortAccout}</p>
 {/if}
