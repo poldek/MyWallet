@@ -129,8 +129,20 @@ small {
 }
 
 .empty {
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
+
+table,
+td,
+th {
+  border: 1px solid white;
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
 .footer {
   position: fixed;
   font-family: "Courier New", Courier, monospace;

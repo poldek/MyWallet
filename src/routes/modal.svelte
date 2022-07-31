@@ -17,7 +17,7 @@ onMount(async () => {
 
     checkConnection();
 })
-
+//check connetion
 function checkConnection() {
     window.ethereum.request({
         method: 'eth_accounts'
@@ -41,8 +41,8 @@ async function handleAccountsChanged(isConnectionAccount) {
     }
 };
 
-let infuraId =
-    import.meta.env.VITE_INFURA_ID; // infura id required
+// infura id required
+let infuraId = import.meta.env.VITE_INFURA_ID; 
 
 const providerOptions = {
     walletconnect: {
@@ -53,6 +53,7 @@ const providerOptions = {
     }
 };
 
+//show modal wallet
 async function handleWeb3Modal() {
 
     let web3Modal = new Web3Modal({

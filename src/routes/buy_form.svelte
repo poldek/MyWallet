@@ -12,6 +12,7 @@ let msg = "";
 let transactionPending = false;
 let errorTransaction = false;
 
+//Form
 const {
     form,
     errors,
@@ -76,6 +77,7 @@ const onSubmitbuyMeCoffe = async (matic, name, message) => {
     
 {#if msg.hash }
     <h2 class="text-success">Success</h2>
+    <p><a href="/buy_list">Show me list</a></p>
     <p>look at: <a href="https://mumbai.polygonscan.com/tx/{msg.hash}" target="_blank">https://mumbai.polygonscan.com</a></p>
     <p>From: {msg.from}</p>
     <p>To: {msg.to}</p>

@@ -7,7 +7,7 @@ import {
     onMount
 } from 'svelte';
 
-import FormBuy from "./form_buy.svelte";
+import FormBuy from "./buy_form.svelte";
 let provider;
 
 onMount(async () => {

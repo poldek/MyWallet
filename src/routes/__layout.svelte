@@ -5,8 +5,9 @@ import Footer from './footer.svelte';
 <nav class="navMenu">
     <a href="/">Metamask || </a>
     <a href="/modal">Web3Modal || </a>
-    <a href="/ethereum_wallet">Etherum wallet || </a>
-    <a href="/buy">BuyMeCoffe</a>
+    <a href="/wallet_ethereum">Etherum wallet || </a>
+    <a href="/buy">BuyMeCoffe || </a>
+    <a href="/buy_list">Donor list</a>
 
 </nav>
 
