@@ -48,7 +48,7 @@ const providerOptions = {
     walletconnect: {
         package: WalletConnectProvider,
         options: {
-            infuraId
+            infuraId // required
         },
     }
 };
@@ -70,10 +70,9 @@ async function handleWeb3Modal() {
 }
 </script>
 {#if !account}
-<div class="btnCustom">
-    <button  on:click={handleWeb3Modal}>Web3Modal</button>
-</div>
+    <div class="btnCustom">
+        <button  on:click={handleWeb3Modal}>Web3Modal</button>
+    </div>
 {:else}
-<br />
-Your wallet: <p class="text-success">{shortAccout}</p>
+    <p class="text-success">Your wallet: {shortAccout}</p>
 {/if}

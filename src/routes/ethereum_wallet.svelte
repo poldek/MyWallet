@@ -19,9 +19,8 @@ async function handleCreateWallet() {
 <div class="btnCustom">
     <button  on:click={handleCreateWallet}>Create wallet</button>
 </div>
-<br/>
 {#if address}
-<p class="text-success">Address: {address}</p><br /><br >
-<p class="text-success">Mnemonic: {mnemonic}</p> <br /><br >
-<p class="text-success">Private key: {privateKey}</p> <br /><br >
+    <p class="text-success">Address: {address}</p>
+    <p class="text-success">Mnemonic: {mnemonic}</p> 
+    <p class="text-success">Private key: {privateKey}</p> 
 {/if}

@@ -1,5 +1,9 @@
-#Przekierowanie bez WWW
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.http://mywallet.pgmsoft.com/ [nc]
-RewriteRule ^(.*)$ http://http://mywallet.pgmsoft.com//$1 [r=301,nc]
+# Redirect all to the index
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /index.html
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

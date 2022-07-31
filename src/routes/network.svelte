@@ -6,5 +6,4 @@ export let name, chainId;
     <h3>Network - if you change your sites, it will automatically reload the page</h3>
     <p>{name}</p>
     <p>{chainId}</p>
-    
 </div>

@@ -98,10 +98,10 @@ async function getBalance(account) {
 </script>
 
 {#if account}
-<AccountInfo {account} {balance}/>
+    <AccountInfo {account} {balance}/>
     <NetworkInfo {name} {chainId}/>
-        <SignInformation {authenticated} {decodeMessage} {signature} {account} {provider}/>
-            {:else}
+    <SignInformation {authenticated} {decodeMessage} {signature} {account} {provider}/>
+{:else}
     <div class="btnCustom">
         <button on:click={connectWallet}>Connect With My Wallet</button>
     </div>

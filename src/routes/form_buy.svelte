@@ -73,19 +73,17 @@ const onSubmitbuyMeCoffe = async (matic, name, message) => {
 {#if errorTransaction}
     <p>{msg}</p>
 {/if}
-
+    
 {#if msg.hash }
-    <h2>Success</h2>
-    <br />
+    <h2 class="text-success">Success</h2>
     <p>look at: <a href="https://mumbai.polygonscan.com/tx/{msg.hash}" target="_blank">https://mumbai.polygonscan.com</a></p>
-    <br />
-    From:<p>{msg.from}</p><br />
-    To:<p >{msg.to}</p><br />
+    <p>From: {msg.from}</p>
+    <p>To: {msg.to}</p>
 {:else}
 <div class="buy-form">
     <form on:submit={handleSubmit}>
         <label for="matic">Matic</label>
-        <select id="matic" name="matic"
+        <select id="matic" name="matic" style="width: 300px;"
             on:change={handleChange}
             bind:value={$form.title}>
             <option value="2">Send me 2 MATIC</option>
@@ -94,18 +92,18 @@ const onSubmitbuyMeCoffe = async (matic, name, message) => {
         </select>
         <label for="name">Name</label>
         <input id="name" name="name" placeholder="Your name" on:change={handleChange} bind:value={$form.name}/>
-        {#if $errors.name}
-        <small>{$errors.name}</small>
-        {/if}
+            {#if $errors.name}
+                <small>{$errors.name}</small>
+            {/if}
         <label for="message">Message</label>
         <textarea placeholder="Message" id="message" name="message"
-            on:change={handleChange} bind:value={$form.message} rows="4" cols="40"
-            ></textarea>
-        {#if $errors.message}
-        <small>{$errors.message}</small>
-        {/if}
+            on:change={handleChange} bind:value={$form.message} rows="4" cols="40"></textarea>
+            {#if $errors.message}
+                <small>{$errors.message}</small>
+            {/if}
         <br>
         <button type="submit" id="submit">BuyMeCoffee</button>
     </form>
 </div>
 {/if}
+<div class="empty"></div>

@@ -6,9 +6,6 @@ body {
   background-color: #26272e;
   color: white;
 }
-nav {
-  margin: 1rem;
-}
 
 .logo {
   font-size: 30px;
@@ -24,7 +21,6 @@ nav {
 }
 
 .welcome-text {
-  margin-top: 3rem;
   color: white;
   font-size: 0.995rem;
   font-weight: 500;
@@ -78,10 +74,6 @@ a:hover {
   color: yellow;
 }
 
-p {
-  display: inline;
-}
-
 .text-success {
   border-radius: 0.75rem;
   border-width: 0;
@@ -96,19 +88,18 @@ p {
 }
 
 .buy-form {
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 input {
   padding: 3px;
-  box-shadow: 3px 3px 5px grey;
   font-size: 14px;
   font-weight: 600;
   width: 300px;
 }
 
 label {
-  color: #b4886b;
+  color: #265df4;
   font-weight: bold;
   display: block;
 }
@@ -121,17 +112,25 @@ small {
 }
 
 #submit {
-  padding: 10px;
-  border: 1px solid gray;
-  background-color: #b4886b;
-  border-radius: 5px;
-  font: inherit;
+  border-radius: 0.75rem;
+  border-width: 0;
+  background-color: #265df4;
+  font-size: 0.995rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 1.25rem;
+  padding: 1rem 1.5rem;
+  transition-duration: 0.3s;
 }
 #submit:hover {
   background-color: orange;
   cursor: pointer;
 }
 
+.empty {
+  margin-bottom: 10rem;
+}
 .footer {
   position: fixed;
   font-family: "Courier New", Courier, monospace;
