@@ -1,8 +1,12 @@
-# MyWallet
+# ![plot](./static/assets/img/MetaMask_small.png) MyWallet
 
 MyWallet demo environment, show metamask wallet confirm and sign message
 [`DEMO`](http://mywallet.pgmsoft.com).
 
+# ScreenShot
+![plot](./static/assets/screenshot/metamask.png)
+![plot](./static/assets/screenshot/web3modal.png)
+![plot](./static/assets/screenshot/list.png)
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
