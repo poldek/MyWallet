@@ -7,9 +7,11 @@ import {
     onMount
 } from 'svelte';
 
-import AccountInfo from './account.svelte';
 import NetworkInfo from './network.svelte';
 import SignInformation from './sign.svelte';
+import AccountInfo from './account.svelte';
+import MetaMask from '../store/metamask'
+const [stausMetamask] = MetaMask();
 
 let provider;
 let account = "";
@@ -19,8 +21,12 @@ let chainId = "";
 let authenticated = false;
 let decodeMessage = "";
 let signature = "";
+let metamaskInformation = true;
 
 onMount(async () => {
+    if(!$stausMetamask) {
+        metamaskInformation = false;
+    }
     provider = new ethers.providers.Web3Provider(window.ethereum)
     checkConnection();
 })
@@ -102,7 +108,16 @@ async function getBalance(account) {
     <NetworkInfo {name} {chainId}/>
     <SignInformation {authenticated} {decodeMessage} {signature} {account} {provider}/>
 {:else}
-    <div class="btnCustom">
-        <button on:click={connectWallet}>Connect With My Wallet</button>
-    </div>
+    {#if metamaskInformation}
+        <div class="btnCustom">
+            <button on:click={connectWallet}>Connect With My Wallet</button>
+        </div>
+    {:else}
+    <h2>Install MetaMask Wallet</h2>
+        <div class="text-info">
+            <p>The MetaMask crypto wallet is either a browser extension or a mobile app for Ethereum or ETH-based tokens. </p>
+            <p>Go to https://metamask.io and <a href="https://metamask.io/download/" target="_blank">click</a> on the button to download and install</p>
+            <p>the Metamask extension, which is compatible with Google Chrome (and Opera), Firefox, MS Edge and Brave browsers.</p>
+        </div>
+    {/if}
 {/if}

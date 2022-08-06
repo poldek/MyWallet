@@ -87,6 +87,19 @@ a:hover {
   transition-duration: 0.3s;
 }
 
+.text-info {
+  border-radius: 0.75rem;
+  border-width: 0;
+  background-color: red;
+  font-size: 0.995rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 1.25rem;
+  padding: 1rem 1.5rem;
+  transition-duration: 0.3s;
+}
+
 .buy-form {
   margin: 1rem;
 }
