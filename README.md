@@ -1,7 +1,17 @@
 # ![plot](./static/assets/img/MetaMask_small.png) MyWallet
 
-MyWallet demo environment, show metamask wallet confirm and sign message
+Integration of Svelte based App with Smart Contract and the way to work dynamically with a wallet.
 [`DEMO`](http://mywallet.pgmsoft.com).
+Frontend will be able to do the following:
+
+* Metamask wallet login
+* Web3Modal wallet login
+* dynamic account management
+* creation of new account
+* sign message
+* allow the user to send a greeting message along with money on black coffee
+* display all the greeting messages on the front-end along with the sender's address
+
 
 # ScreenShot
 ![plot](./static/assets/screenshot/metamask.png)

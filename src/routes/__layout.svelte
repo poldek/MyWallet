@@ -7,7 +7,8 @@ import Footer from './footer.svelte';
     <a href="/modal">Web3Modal || </a>
     <a href="/wallet_ethereum">Etherum wallet || </a>
     <a href="/buy">BuyMeCoffe || </a>
-    <a href="/buy_list">Donor list</a>
+    <a href="/buy_list">Donor list || </a>
+    <a href="/help">Help</a>
 
 </nav>
 
